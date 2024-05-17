@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>What's Your Gender?</title>
+
+    <style>
+        .heading {
+            font-size: 3rem;
+            background-color: lightblue;
+            position: relative;
+            padding: 30px;
+        }
+        .home{
+            position: absolute;
+            right: 10px; 
+            }
+        h1 {
+            text-align: center;
+            font-size: 60px;
+        }
+        .i {
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        What's Your Gender?
+        <a class='home' href="index.ejs">Home</a>
+    </div>
+
+    <h1>What's Your Name?</h1>
+
+    <form action="http://localhost:5000/ordersubmitted" method="post">
+        First Name:<input class="i" type="text" name="first_name">
+        <input type="submit">
+    </form>
+</body>
+</html>
